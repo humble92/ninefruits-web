@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Ninefruits.work - Digital Experiences</title>
+        <!-- Material Symbols -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <!-- Tailwind Config -->
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#2bee79",
+                            "background-light": "#f6f8f7",
+                            "background-dark": "#102217",
+                            "surface-dark": "#182e22",
+                        },
+                        fontFamily: {
+                            display: ["Inter", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.25rem",
+                            lg: "0.5rem",
+                            xl: "0.75rem",
+                            full: "9999px",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+            }
+            .text-gradient {
+                background: linear-gradient(to right, #2bee79, #8fffb6);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        </style>
+    </head>
+    <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden flex flex-col min-h-screen">
+        <!-- Navbar -->
+        <div id="header-placeholder"></div>
+        <main class="flex-grow pt-16">
+            <!-- Hero Section -->
+            <section class="relative px-6 py-20 lg:py-32 overflow-hidden">
+                <!-- Background Glow -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
+                <div class="relative z-10 max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="flex flex-col gap-6 text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            <span class="text-xs font-semibold text-primary uppercase tracking-wider">Available for work</span>
+                        </div>
+                        <h1 class="text-4xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tight">Building <span class="text-gradient">digital</span> experiences.</h1>
+                        <p class="text-lg text-slate-600 dark:text-gray-400 max-w-xl leading-relaxed">Turning ideas into functional software. Welcome to the personal portfolio of Ninefruits.work, where utility meets modern aesthetics.</p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a class="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-primary hover:bg-primary/90 text-background-dark text-base font-bold transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(43,238,121,0.3)]" href="apps/photo-contest.html">
+                                View Apps
+                                <span class="material-symbols-outlined ml-2 text-sm">arrow_downward</span>
+                            </a>
+                            <a class="inline-flex items-center justify-center h-12 px-8 rounded-lg border border-slate-300 dark:border-slate-700 hover:border-primary dark:hover:border-primary text-slate-900 dark:text-white bg-transparent hover:bg-slate-100 dark:hover:bg-white/5 text-base font-bold transition-all" href="#about">
+                                About Developer
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative lg:h-full flex items-center justify-center">
+                        <div class="relative w-full aspect-square max-w-[500px] bg-gradient-to-tr from-surface-dark to-background-dark rounded-2xl border border-white/5 p-2 shadow-2xl">
+                            <!-- Abstract coding interface representation -->
+                            <div class="w-full h-full rounded-xl overflow-hidden bg-background-dark relative group" data-alt="Abstract dark coding interface with glowing syntax highlights">
+                                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&amp;w=2070&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-40 mix-blend-luminosity group-hover:opacity-60 transition-opacity duration-700"></div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+                                <!-- Floating Card Overlay -->
+                                <div class="absolute bottom-8 left-8 right-8 p-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl shadow-lg">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <div class="size-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+                                            <span class="material-symbols-outlined">code</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-white font-bold">Latest Release</h3>
+                                            <p class="text-xs text-primary">v1.0.0 Deployed</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+                                        <div class="w-3/4 h-full bg-primary rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Features/Apps Section -->
+            <section class="hidden px-6 py-24 bg-surface-dark/50 border-y border-white/5" id="apps">
+                <div class="max-w-[1200px] mx-auto flex flex-col gap-16">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Featured Projects</h2>
+                            <p class="text-gray-400 max-w-lg">A showcase of top released applications combining utility with modern aesthetics.</p>
+                        </div>
+                        <a class="text-primary font-bold hover:underline decoration-2 underline-offset-4 flex items-center gap-1 group" href="apps/index.html">
+                            View All Projects
+                            <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Project Card 1 -->
+                        <div class="group relative bg-background-dark border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-colors duration-300 flex flex-col h-full">
+                            <div class="w-full aspect-video bg-cover bg-center relative overflow-hidden" data-alt="Modern dashboard interface with dark mode charts" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArKxCge-xoq6-Iew2TQ5u1cfQeW_e5knVNOnXOgKwsjHT7k5mJLBW6S3dvoglDtCWR-VGOktzXWPQoima3aHWVPNV7OvoinxM6HHh-9Jts7v-ym7kwpveIm2v34ta__eDQxMe-kbbGMkMwURWDDxxRlc16RiMXr7QBGNdrU-aCiKKu-Jnsxyh_gyImfCvXzzojvDT_b8LlgcMDAnaunjB39ahNpKIjxVtzTXcbc7JUNBJwVdF-QB8UCZRx-yMhcYGv-uEwBVko0sY');">
+                                <div class="absolute inset-0 bg-black/50 group-hover:bg-black/20 transition-all duration-500"></div>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-bold text-white">DataFlow</h3>
+                                    <div class="p-2 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary text-gray-400 transition-colors cursor-pointer">
+                                        <span class="material-symbols-outlined text-lg">open_in_new</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-400 mb-4 flex-1">A powerful utility tool for everyday data visualization tasks with real-time syncing.</p>
+                                <div class="flex gap-2">
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">React</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">D3.js</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card 2 -->
+                        <div class="group relative bg-background-dark border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-colors duration-300 flex flex-col h-full">
+                            <div class="w-full aspect-video bg-cover bg-center relative overflow-hidden" data-alt="Mobile app interface displaying a chat conversation" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClbtkljypxZmiggmnKaKYuiVEDkJ30eDmUyXyitIzoOjWxfPzs8LY_wiIzXtPjmAjxO3LDnQuMc8OkPjKAfgD2fEdW-R-V1GkLt2b1aJIx9kTv-j-bpICt5iIedABmVEP5oLYMFBULoly1Soy1-kYrJjZ7hJjhIYLFFBTk5Ut8cOQdNs_GrSGna2mrGJKs9UBH8q4ZEBygkSRvS8t-LE9gYvoWf7ts7dTweVd5JWOQNLKPTd0o9vcSxX9b_oBev7M0lb_j5YLXKBQ');">
+                                <div class="absolute inset-0 bg-black/50 group-hover:bg-black/20 transition-all duration-500"></div>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-bold text-white">ChatStream</h3>
+                                    <div class="p-2 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary text-gray-400 transition-colors cursor-pointer">
+                                        <span class="material-symbols-outlined text-lg">open_in_new</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-400 mb-4 flex-1">Innovative productivity suite for professionals needing secure communication.</p>
+                                <div class="flex gap-2">
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Flutter</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card 3 -->
+                        <div class="group relative bg-background-dark border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-colors duration-300 flex flex-col h-full">
+                            <div class="w-full aspect-video bg-cover bg-center relative overflow-hidden" data-alt="Retro gaming console controller on a dark background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-vRygdcEAeax-WpQVobN8nuTVVQQGiE3yjMYT1KHpngY7SdtvDN3yBc0qcre0BUR5jEPg5Tk8YNMH6RIFvBzgUVUMDiNQmCyMdrdi4HjLKlfXII6mUzupUVZQC2Zs6DboeBXSq1xUhoP8__GJtPon-Uk2zNL8ac-CZmRH6caSjrOiXF8s1roCNErAty74HjjKqGfmOx34k1c31loRxUO0L2dtu26EC_LI27QrN9p5S2NSRnz82hx8rWByGpg8r7uzhsrao8dFmU4');">
+                                <div class="absolute inset-0 bg-black/50 group-hover:bg-black/20 transition-all duration-500"></div>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-bold text-white">RetroPixel</h3>
+                                    <div class="p-2 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary text-gray-400 transition-colors cursor-pointer">
+                                        <span class="material-symbols-outlined text-lg">open_in_new</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-400 mb-4 flex-1">Immersive entertainment experience bringing 8-bit classics to the web.</p>
+                                <div class="flex gap-2">
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">WebGL</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Vue</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section -->
+            <section class="px-6 py-24 bg-background-dark relative" id="about">
+                <div class="max-w-[800px] mx-auto text-center flex flex-col gap-8 items-center">
+                    <div class="size-20 rounded-full bg-surface-dark border border-white/10 flex items-center justify-center text-primary shadow-xl">
+                        <span class="material-symbols-outlined text-4xl">person</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">About the Developer</h2>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        Hello! I'm the creator behind Ninefruits.work. I specialize in building performant web applications and intuitive user interfaces. My goal is to create software that is not just functional, but delightful to use. When I'm not coding, I'm exploring new technologies and design
+                        patterns.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mt-4">
+                        <a class="flex items-center gap-2 px-5 py-3 bg-surface-dark hover:bg-white/10 border border-white/5 rounded-lg text-white text-sm font-medium transition-colors" href="#">
+                            <span class="material-symbols-outlined text-primary">mail</span>
+                            Contact Me
+                        </a>
+                        <a class="flex items-center gap-2 px-5 py-3 bg-surface-dark hover:bg-white/10 border border-white/5 rounded-lg text-white text-sm font-medium transition-colors" href="#">
+                            <span class="material-symbols-outlined text-primary">terminal</span>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script src="/js/main.js"></script>
+    </body>
+</html>

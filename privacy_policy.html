@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Privacy Policy - Ninefruits.work</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+        <!-- Material Symbols -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <!-- Theme Configuration -->
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#2bee79",
+                            "background-light": "#f6f8f7",
+                            "background-dark": "#112218",
+                            "surface-dark": "#1a3324",
+                            "surface-dark-hover": "#234832",
+                        },
+                        fontFamily: {
+                            display: ["Spline Sans", "sans-serif"],
+                        },
+                        borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+                    },
+                },
+            };
+        </script>
+        <style>
+            /* Custom scrollbar for dark theme */
+            ::-webkit-scrollbar {
+                width: 8px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #112218;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #234832;
+                border-radius: 4px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #2bee79;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            /* Document-style typography */
+            main {
+                max-width: 65ch;
+            }
+            .prose p {
+                margin-bottom: 1.25em;
+                line-height: 1.75;
+                font-size: 1rem;
+            }
+            .prose h2 {
+                margin-top: 2.5em;
+                margin-bottom: 1em;
+            }
+            .prose ul,
+            .prose ol {
+                margin-top: 1.25em;
+                margin-bottom: 1.25em;
+                padding-left: 1.625em;
+            }
+            .prose li {
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                line-height: 1.75;
+            }
+            .prose strong {
+                font-weight: 600;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased min-h-screen flex flex-col overflow-x-hidden selection:bg-primary selection:text-background-dark">
+        <!-- Top Navigation -->
+        <div id="header-placeholder"></div>
+        <!-- Main Layout -->
+        <div class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Sidebar Navigation (Sticky) -->
+                <aside class="lg:col-span-3 hidden lg:block">
+                    <div class="sticky top-28 space-y-8">
+                        <div>
+                            <h3 class="text-sm uppercase tracking-wider text-gray-400 font-semibold mb-4 pl-3">Contents</h3>
+                            <nav class="space-y-1">
+                                <a class="block px-3 py-2 text-sm font-medium text-primary bg-primary/10 rounded-lg border-l-2 border-primary transition-all" href="#overview">Overview</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#collection">Information We Collect</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#usage">How We Use Information</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#third-party">Third-Party Services</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#children">Children's Privacy</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#retention">Data Retention &amp; Erasure</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#sharing">Information Sharing</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#security">Storage &amp; Security</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#global">Global Data Privacy Practices</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#eu-rights">EU User Rights</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#data-protection">Data Protection Contact</a>
+                                <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#contact">Contacting the Developer</a>
+
+                                <div class="mt-4 pt-4 border-t border-[#234832] space-y-1">
+                                    <a class="block px-3 py-2 text-sm font-medium text-gray-400 hover:text-white hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all" href="#changes">Changes to Our Notice</a>
+                                    <a class="block px-3 py-2 text-sm font-medium text-primary/80 hover:text-primary hover:bg-[#234832] rounded-lg border-l-2 border-transparent transition-all flex items-center gap-2" href="https://docs.google.com/document/d/1MslEPuxI1aNO_Q_xI8Bi6mFqPENjgG_6iRkZArTpno0/edit?usp=sharing" target="_blank">
+                                        <span>View in Google Doc</span>
+                                        <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Contact Card Mini -->
+                        <div class="p-4 rounded-xl bg-surface-dark border border-[#234832]">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="material-symbols-outlined text-primary">mail</span>
+                                <span class="text-sm font-bold text-white">Questions?</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mb-3 leading-relaxed">If you have any concerns regarding this policy, feel free to reach out.</p>
+                            <a class="text-xs font-medium text-primary hover:underline" href="mailto:humble92@gmail.com">humble92@gmail.com</a>
+                        </div>
+                    </div>
+                </aside>
+                <!-- Main Content Area -->
+                <main class="lg:col-span-8 lg:col-start-4">
+                    <!-- Page Header -->
+                    <div class="mb-16 border-b border-[#234832] pb-10">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">Legal</span>
+                            <span class="text-gray-500 text-sm flex items-center gap-1.5">
+                                <span class="material-symbols-outlined text-[16px]">schedule</span>
+                                Last updated: December 19, 2025
+                            </span>
+                        </div>
+                        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">Privacy Policy</h1>
+                        <p class="text-lg md:text-xl text-[#92c9a8] font-light max-w-3xl leading-relaxed">How we collect, use, store, and disclose information when you use our services.</p>
+                    </div>
+                    <!-- Content Sections -->
+                    <div class="space-y-20 text-gray-300">
+                        <!-- Overview -->
+                        <section class="scroll-mt-32" id="overview">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">info</span>
+                                </span>
+                                Overview
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="mb-6 leading-relaxed">This Privacy Policy clarifies how Daniel Hwang (referred to as the developer) collects, uses, stores, and discloses information when you interact with the developer's mobile apps, software (referred to as the service), or engage with the developer in any manner.</p>
+                            </div>
+                        </section>
+                        <!-- Information We Collect -->
+                        <section class="scroll-mt-32" id="collection">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">database</span>
+                                </span>
+                                Information We Collect
+                            </h2>
+                            <div class="text-gray-300 mb-8">
+                                <p class="mb-6 leading-relaxed">The developer may collect user information, including personal data:</p>
+                                <ul class="space-y-4 list-none pl-0">
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed"><strong>Information You Provide:</strong> When using the service, the developer collects data directly from you, such as email address and account preferences, used for profile creation, account modification, consent forms, surveys, and customer support.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed"><strong>Social Media Credentials:</strong> If you're a member of a social media network (e.g., Google or Facebook), you may use your social credentials to create and log into the developer's account.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed"><strong>Device Information:</strong> The developer may collect information about your mobile device, including device model, operating system version, and unique device identifiers to optimize app performance.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed"><strong>Usage Data:</strong> The developer may collect anonymous data on how you interact with the service, such as features used and time spent, to help the developer improve user experience.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- How We Use Information -->
+                        <section class="scroll-mt-32" id="usage">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">construction</span>
+                                </span>
+                                How We Use Collected Information
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="mb-6 leading-relaxed">Information collected is used to:</p>
+                                <ul class="space-y-4 list-none pl-0">
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Provide, operate, maintain, and enhance the service.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Enable access and usage of the requested service, including sending notices, updates, and support messages.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Respond to inquiries, offer customer service, and communicate about products, features, surveys, promotions, and events.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Investigate and prevent fraudulent transactions and illegal activities.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Analyze trends and user activities for service improvement.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Personalize the service and enhance user experience.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Fulfill other purposes disclosed in advance or with your consent.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Third Party Services -->
+                        <section class="scroll-mt-32" id="third-party">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">handshake</span>
+                                </span>
+                                Third-Party Services
+                            </h2>
+                            <div class="text-gray-300 mb-6">
+                                <p class="leading-relaxed">The developer may employ third-party companies and individuals ("Service Providers") to aid in the delivery of the service, to provide the service on behalf of the developer, or to assist the developer in analyzing how the service is used.</p>
+                            </div>
+                            <div class="bg-[#1a3324]/50 rounded-lg p-6 border border-[#234832]">
+                                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">External Links</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <a class="inline-flex items-center gap-2 px-4 py-2 bg-[#234832] hover:bg-[#2bee79] hover:text-[#112218] text-white text-sm font-medium rounded transition-colors group" href="#">
+                                        Google Analytics
+                                        <span class="material-symbols-outlined text-[16px] group-hover:-rotate-45 transition-transform duration-300">arrow_forward</span>
+                                    </a>
+                                    <a class="inline-flex items-center gap-2 px-4 py-2 bg-[#234832] hover:bg-[#2bee79] hover:text-[#112218] text-white text-sm font-medium rounded transition-colors group" href="#">
+                                        Firebase
+                                        <span class="material-symbols-outlined text-[16px] group-hover:-rotate-45 transition-transform duration-300">arrow_forward</span>
+                                    </a>
+                                    <a class="inline-flex items-center gap-2 px-4 py-2 bg-[#234832] hover:bg-[#2bee79] hover:text-[#112218] text-white text-sm font-medium rounded transition-colors group" href="#">
+                                        RevenueCat
+                                        <span class="material-symbols-outlined text-[16px] group-hover:-rotate-45 transition-transform duration-300">arrow_forward</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Childrens Privacy -->
+                        <section class="scroll-mt-32" id="children">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">child_care</span>
+                                </span>
+                                Children’s Policy
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="leading-relaxed">The service does not address anyone under the age of 13. The developer does not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your child has provided the developer with Personal Data, please contact the developer. If the developer becomes aware that the developer has collected Personal Data from anyone under the age of 13 without verification of parental consent, the developer takes steps to remove that information from the developer's servers.</p>
+                            </div>
+                        </section>
+                        <!-- Data Retention -->
+                        <section class="scroll-mt-32" id="retention">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">delete</span>
+                                </span>
+                                Data Retention and Erasure
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="leading-relaxed">The developer retains data during your use of the service. You can request deletion of your user data when no longer needed. Legal, regulatory, or audit obligations may require longer data retention. The developer may also anonymize and retain historical study information at the developer's discretion.</p>
+                            </div>
+                        </section>
+                        <!-- Information Sharing -->
+                        <section class="scroll-mt-32" id="sharing">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">share</span>
+                                </span>
+                                Information Sharing
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="mb-6 leading-relaxed">Personal data won't be shared with third parties except as specified:</p>
+                                <ul class="space-y-4 list-none pl-0">
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed"><strong>Compliance with Laws:</strong> Disclosure may occur to comply with laws, regulations, legal processes, or government requests.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed"><strong>Business Transfers:</strong> Personal data may be shared in connection with mergers, sales, or acquisitions.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed"><strong>Aggregated and/or Anonymized Data:</strong> Non-personal information may be shared for research or lawful purposes.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Storage and Security -->
+                        <section class="scroll-mt-32" id="security">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">shield</span>
+                                </span>
+                                Storage and Security
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="leading-relaxed">By using the service, you agree to store information on the developer's servers in the United States. The developer is responsible for the implementation and maintenance of physical, technical, and organizational safeguards to protect collected information.</p>
+                            </div>
+                        </section>
+                        <!-- Global Data Privacy Practices -->
+                        <section class="scroll-mt-32" id="global">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">public</span>
+                                </span>
+                                Global Data Privacy Practices
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="leading-relaxed">The developer uses Standard Contractual Clauses for cross-border transfers, ensuring privacy protection.</p>
+                            </div>
+                        </section>
+                        <!-- EU User Rights -->
+                        <section class="scroll-mt-32" id="eu-rights">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">gavel</span>
+                                </span>
+                                EU User Rights
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="mb-6 leading-relaxed">For inquiries or rights under this Privacy Policy, contact the developer. EU user rights include:</p>
+                                <ul class="space-y-4 list-none pl-0">
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Access, rectification, or erasure of personal data.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Restriction of data processing.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Data portability.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Retaining personal information.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Receiving promotional communications.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5 text-lg flex-shrink-0">check_circle</span>
+                                        <span class="leading-relaxed">Lodging a complaint with a supervisory authority.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Data Protection Contact -->
+                        <section class="scroll-mt-32" id="data-protection">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">contact_mail</span>
+                                </span>
+                                Data Protection Contact
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="leading-relaxed">The developer serves as the data controller and the primary contact for all data protection inquiries, which the developer will ensure are properly addressed through the provided contact information.</p>
+                            </div>
+                        </section>
+                        <!-- Contacting the Developer -->
+                        <section class="scroll-mt-32" id="contact">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">mail</span>
+                                </span>
+                                Contacting the Developer
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="leading-relaxed">
+                                    If you have any questions about this Privacy Policy, please contact <a class="text-primary hover:underline" href="mailto:humble92@gmail.com">humble92@gmail.com</a>.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Changes -->
+                        <section class="scroll-mt-32" id="changes">
+                            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span class="flex items-center justify-center w-8 h-8 rounded bg-[#234832] text-primary">
+                                    <span class="material-symbols-outlined text-sm">history</span>
+                                </span>
+                                Changes to Our Notice
+                            </h2>
+                            <div class="text-gray-300">
+                                <p class="leading-relaxed">The developer reserves the right to modify this Privacy Policy periodically. Notice of changes will be provided through email or a notice on the homepage before the changes take effect. If you disagree with the revised Privacy Policy, you must deactivate your account by contacting the developer (see contacts below).</p>
+                            </div>
+                        </section>
+                        <!-- Contact Footer -->
+                        <div class="mt-16 pt-8 border-t border-[#234832]">
+                            <div class="bg-gradient-to-r from-surface-dark to-[#1a3324] rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                                <div>
+                                    <h3 class="text-xl font-bold text-white mb-2">Still have questions?</h3>
+                                    <p class="text-gray-400 text-sm max-w-md">We are happy to answer any questions related to our privacy practices and user data safety.</p>
+                                </div>
+                                <a class="flex items-center gap-2 bg-primary hover:bg-green-400 text-background-dark font-bold px-6 py-3 rounded-lg transition-all shadow-lg shadow-green-900/20 whitespace-nowrap" href="mailto:humble92@gmail.com">
+                                    <span class="material-symbols-outlined">mail</span>
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
