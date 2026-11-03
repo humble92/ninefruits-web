@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Solar GPS Guardian | Ninefruits.work</title>
+        <meta content="A public space-weather dashboard for GPS risk. Purpose, features, technology stack, screenshots, and demo video." name="description" />
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#2bee79",
+                            "background-light": "#f6f8f7",
+                            "background-dark": "#102217",
+                            "surface-dark": "#162e21",
+                            "border-dark": "#234832",
+                        },
+                        fontFamily: {
+                            display: ["Spline Sans", "sans-serif"],
+                            body: ["Noto Sans", "sans-serif"],
+                        },
+                        borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden font-display">
+        <div id="header-placeholder"></div>
+        <main class="layout-container flex h-full grow flex-col pt-16">
+            <div class="px-5 md:px-10 lg:px-40 flex flex-1 justify-center py-8">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="flex items-center gap-2 mb-6 text-sm text-gray-400">
+                        <a class="hover:text-primary transition-colors" href="/apps/index.html">Apps</a>
+                        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+                        <span class="text-white">Solar GPS Guardian</span>
+                    </div>
+                    <section class="mb-12">
+                        <div class="flex flex-col gap-8 lg:flex-row lg:items-center">
+                            <div class="w-full lg:w-1/2 overflow-hidden rounded-xl border border-border-dark bg-[#0b1220] shadow-2xl">
+                                <img alt="Live Solar GPS Guardian dashboard with risk score and map" class="w-full h-auto" src="/img/apps/solar/live.png" />
+                            </div>
+                            <div class="flex flex-col gap-6 lg:w-1/2">
+                                <div class="flex flex-col gap-4">
+                                    <span class="w-fit rounded-full bg-primary/10 border border-primary/30 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Web application</span>
+                                    <h1 class="text-white text-4xl font-black leading-tight tracking-tight">Solar GPS Guardian</h1>
+                                    <p class="text-gray-300 text-base leading-relaxed">A public dashboard and email alert for GPS risk from space weather. Open the page, check a place or a drive, and subscribe with an email and a region. There is no account.</p>
+                                </div>
+                                <div class="flex flex-wrap gap-3">
+                                    <a class="inline-flex items-center justify-center gap-2 rounded-full h-12 px-6 bg-primary text-background-dark text-sm font-bold hover:bg-white transition-colors" href="https://solar-gps-guardian.ninefruits.work/" target="_blank" rel="noopener noreferrer">
+                                        <span class="material-symbols-outlined text-[20px]">open_in_new</span>
+                                        Open live site
+                                    </a>
+                                    <a class="inline-flex items-center justify-center gap-2 rounded-full h-12 px-6 border border-gray-600 text-white text-sm font-bold hover:border-primary transition-colors" href="https://github.com/humble92/solar-gps-guardian" target="_blank" rel="noopener noreferrer">
+                                        <span class="material-symbols-outlined text-[20px]">code</span>
+                                        View source
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="flex flex-col gap-12 border-t border-border-dark pt-10 pb-20">
+                        <div>
+                            <h2 class="text-white text-2xl font-bold mb-4">Demo</h2>
+                            <p class="text-gray-400 text-sm mb-4">A three-minute walkthrough of the live page.</p>
+                            <div class="aspect-video w-full overflow-hidden rounded-xl border border-border-dark bg-black">
+                                <iframe class="h-full w-full" src="https://www.youtube.com/embed/WcxweZub2GA" title="Solar GPS Guardian demo video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <a class="inline-flex mt-3 text-sm font-semibold text-primary hover:underline" href="https://youtu.be/WcxweZub2GA" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-10">
+                            <div class="flex flex-col gap-8 md:w-2/3">
+                                <div class="flex flex-col gap-4">
+                                    <h2 class="text-white text-2xl font-bold">Purpose</h2>
+                                    <p class="text-gray-400 text-lg leading-relaxed">Make a solar storm visible as a GPS risk, for a location and for a route, before it is only a headline. The score is a fixed formula over public feeds. A language model may rephrase the sentence only when it repeats that score, and it drafts a monthly newsletter from archived measurements.</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-white text-2xl font-bold mb-4">Technology stack</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">Next.js 15</span>
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">React 19</span>
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">TypeScript</span>
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">Leaflet</span>
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">Python</span>
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">FastAPI</span>
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">Modal</span>
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">SQLite</span>
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">Baseten</span>
+                                        <span class="px-3 py-1 rounded-full bg-surface-dark border border-border-dark text-gray-300 text-sm">Fireworks</span>
+                                    </div>
+                                    <p class="text-gray-400 text-sm leading-relaxed mt-4">The page is a Next.js app. Python on Modal ingests open data every five minutes, scores risk, and sends mail. SQLite on a Modal volume stores the latest snapshot and subscriptions. Map tiles are OpenStreetMap via Leaflet. Place lookup and driving geometry use public Nominatim and OSRM. Baseten, then Fireworks, are optional writers. If they are absent, or if they change the score, the template sentence stays.</p>
+                                </div>
+                            </div>
+                            <div class="md:w-1/3">
+                                <div class="bg-surface-dark rounded-2xl p-6 border border-border-dark">
+                                    <h2 class="text-white font-bold mb-4 border-b border-border-dark pb-2">Information</h2>
+                                    <ul class="flex flex-col gap-4">
+                                        <li class="flex justify-between items-center gap-4">
+                                            <span class="text-gray-500 text-sm">Category</span>
+                                            <span class="text-white text-sm font-medium text-right">Space weather</span>
+                                        </li>
+                                        <li class="flex justify-between items-center gap-4">
+                                            <span class="text-gray-500 text-sm">Access</span>
+                                            <span class="text-white text-sm font-medium">No login</span>
+                                        </li>
+                                        <li class="flex justify-between items-center gap-4">
+                                            <span class="text-gray-500 text-sm">Live site</span>
+                                            <a class="text-primary text-sm font-semibold hover:underline" href="https://solar-gps-guardian.ninefruits.work/" target="_blank" rel="noopener noreferrer">Open</a>
+                                        </li>
+                                        <li class="flex justify-between items-center gap-4">
+                                            <span class="text-gray-500 text-sm">Source</span>
+                                            <a class="text-primary text-sm font-semibold hover:underline" href="https://github.com/humble92/solar-gps-guardian" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-white text-2xl font-bold mb-6">Features</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="flex flex-col gap-4 p-6 rounded-2xl bg-surface-dark border border-border-dark">
+                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined text-2xl">satellite_alt</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-white text-lg font-bold mb-2">Live conditions</h3>
+                                        <p class="text-gray-400 text-sm leading-relaxed">Kp, the three-day forecast, the strongest recent flare, local conditions, and a map. Readings come from public feeds, including NOAA SWPC, NASA DONKI, GFZ, and TEC.</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-4 p-6 rounded-2xl bg-surface-dark border border-border-dark">
+                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined text-2xl">route</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-white text-lg font-bold mb-2">Route risk</h3>
+                                        <p class="text-gray-400 text-sm leading-relaxed">Score a drive, not only a pin. A simulate control shows the same route under a solar superstorm.</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-4 p-6 rounded-2xl bg-surface-dark border border-border-dark">
+                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined text-2xl">mail</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-white text-lg font-bold mb-2">Email alerts</h3>
+                                        <p class="text-gray-400 text-sm leading-relaxed">A subscription is an email address and a region. Subscribers get one daily digest, plus an extra message when the storm rule trips.</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-4 p-6 rounded-2xl bg-surface-dark border border-border-dark">
+                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined text-2xl">newspaper</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-white text-lg font-bold mb-2">Monthly newsletter</h3>
+                                        <p class="text-gray-400 text-sm leading-relaxed">On the first of the month the service publishes a short retrospective of the previous month, with charts, from archived open data. If a feed is missing, the page marks degraded mode and still scores from the readings it has.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-white text-2xl font-bold mb-6">Screenshots</h2>
+                            <div class="flex flex-col gap-8">
+                                <figure class="flex flex-col gap-3">
+                                    <img alt="Live dashboard with moderate GPS risk, flare reading, and a map centered on Toronto" class="w-full h-auto rounded-xl border border-border-dark" src="/img/apps/solar/live.png" />
+                                    <figcaption class="text-gray-400 text-sm">Live dashboard. Current risk, forecast, flare, position, and map.</figcaption>
+                                </figure>
+                                <figure class="flex flex-col gap-3">
+                                    <img alt="Route risk assessment between two places" class="w-full h-auto rounded-xl border border-border-dark" src="/img/apps/solar/route.png" />
+                                    <figcaption class="text-gray-400 text-sm">Route risk for a drive between two places.</figcaption>
+                                </figure>
+                                <figure class="flex flex-col gap-3">
+                                    <img alt="The same driving route under a simulated solar superstorm" class="w-full h-auto rounded-xl border border-border-dark" src="/img/apps/solar/route-storm.png" />
+                                    <figcaption class="text-gray-400 text-sm">The same route with the solar-superstorm simulation on.</figcaption>
+                                </figure>
+                                <figure class="flex flex-col gap-3">
+                                    <img alt="Monthly solar wind newsletter with an event table and a Kp chart" class="w-full h-auto rounded-xl border border-border-dark" src="/img/apps/solar/newsletter.png" />
+                                    <figcaption class="text-gray-400 text-sm">Monthly newsletter. A review of the previous month from open-data archives.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <div id="footer-placeholder"></div>
+        <script src="/js/main.js"></script>
+    </body>
+</html>

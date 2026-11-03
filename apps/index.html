@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <title>Ninefruits.work - Apps &amp; Projects</title>
+        <title>Apps | Ninefruits.work</title>
+        <meta content="A tile list of apps from Ninefruits.work. Open a project for its purpose, features, technology stack, and screenshots." name="description" />
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet" />
@@ -31,40 +32,15 @@
             };
         </script>
     </head>
-    <body class="hidden relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden font-display">
+    <body class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden font-display">
         <div id="header-placeholder"></div>
         <main class="layout-container flex h-full grow flex-col pt-16">
-            <div class="px-5 md:px-10 lg:px-40 flex flex-1 justify-center py-8">
+            <div class="px-5 md:px-10 lg:px-40 flex flex-1 justify-center py-10">
                 <div class="layout-content-container flex flex-col max-w-[1024px] flex-1">
-                    <section class="@container mb-16">
-                        <div class="flex flex-col gap-8 md:flex-row md:items-center bg-surface-dark border border-border-dark p-6 md:p-8 rounded-[2rem] shadow-2xl">
-                            <div class="w-full md:w-1/2 relative group overflow-hidden bg-center bg-no-repeat aspect-video bg-cover rounded-xl border border-border-dark shadow-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCb9sDRRPpoH68Fmza1ujL8xUncAIAeg3UQ6eBoSvh0Pl8VxsQ1KcHKQeSgYhw52A6sWf2pZsTer5bHGy5IDz4Ko0OFBqEzUKrfVI7vWUJ4QWwyiBC3o4kFbStqTJh5hd4uouKZgwCIkIgvaoKQp2DHRhD5uQvuOk6txIjvaKwi2e_atPd_TCbG1aEBZcgEXQDWmwbrUsQy020UDAhAyBCkDHl-nr9ApN3nP4ETF4G6N4NYNHXx3vjYHCvCNJMDqmDVERIbizbfnmU");'>
-                                <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-500"></div>
-                                <div class="absolute top-4 left-4">
-                                    <span class="bg-primary text-background-dark text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">Featured App</span>
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center gap-6 md:w-1/2">
-                                <div class="flex flex-col gap-4 text-left">
-                                    <h2 class="text-white text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight">Photo Contest</h2>
-                                    <p class="text-gray-300 text-lg font-normal leading-relaxed">A community-driven platform for hosting and voting on photography challenges. Join thousands of photographers in weekly themes and win prizes.</p>
-                                </div>
-                                <div class="flex flex-wrap gap-4 pt-2">
-                                    <button class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-background-dark text-base font-bold hover:bg-white transition-colors gap-2">
-                                        <span>View Project</span>
-                                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-                                    </button>
-                                    <button class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-transparent border border-gray-600 text-white text-base font-bold hover:bg-surface-dark hover:border-white transition-colors">
-                                        <span class="truncate">Documentation</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                     <section class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-border-dark/50 mb-10">
-                        <div class="flex flex-col gap-2">
-                            <h2 class="text-white tracking-tight text-3xl font-bold leading-tight">All Applications</h2>
-                            <p class="text-gray-400 font-body">Browse our complete collection of tools and software.</p>
+                        <div class="flex flex-col gap-3">
+                            <h1 class="text-white tracking-tight text-4xl font-bold leading-tight">Apps</h1>
+                            <p class="text-gray-400 font-body max-w-xl">Open a tile for the purpose, the features, the stack, and the screens.</p>
                         </div>
                         <div id="filter-buttons" class="flex gap-3 flex-wrap">
                             <button data-filter="all" class="filter-btn active flex h-10 items-center justify-center gap-x-2 rounded-full bg-primary text-background-dark pl-4 pr-5 transition-colors shadow-lg shadow-primary/20">
@@ -81,95 +57,92 @@
                             </button>
                         </div>
                     </section>
-                    <section id="apps-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-20">
-                        <article data-category="web" class="app-card group flex flex-col bg-surface-dark rounded-2xl border border-border-dark overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-black/20">
-                            <a class="block w-full relative bg-center bg-no-repeat aspect-video bg-cover overflow-hidden" href="#" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2Kp7q0S1uRVV8sjfSCYHIfbHWS47jZ86T8GM_bk6YXGE0GmwrnzvOITmoqdJml5RApa02dBviVs9tUMyYcTxxCVGEKuMxS773wm0QrbyA_1xO0Cj9lm5eqkTz4l-Dkre53-FNNpKwOtvtV_xiKRNPoLXPdlhbtT4cIOiN9n4Jmb6IM_j5Zl7QfKu_uuLSnZsblZb_CrNFa5iHUPvENjkVH4OZLT1No4tIItCs0o6LT-VrPUtXvtUyVz5t7Hg2vHULcR_ZkYSYi7I");'>
+                    <section id="apps-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-20">
+                        <article data-category="mobile" class="app-card group flex flex-col bg-surface-dark rounded-2xl border border-border-dark overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-black/20">
+                            <a class="block w-full relative aspect-video bg-cover bg-center overflow-hidden" href="/apps/photo-contest.html" style="background-image: url('/img/photo_contest.png');">
                                 <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
-                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10 uppercase tracking-wide">CLI Tool</div>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10 uppercase tracking-wide">Mobile</div>
                             </a>
                             <div class="p-5 flex flex-col gap-3 flex-1">
-                                <div class="flex justify-between items-start">
-                                    <h3 class="text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Weather CLI</h3>
+                                <h2 class="text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
+                                    <a href="/apps/photo-contest.html">Photo Contest</a>
+                                </h2>
+                                <p class="text-gray-400 text-sm font-body leading-relaxed">Share photos with a group and vote on the moments that matter.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Flutter</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Supabase</span>
                                 </div>
-                                <p class="text-gray-400 text-sm font-body font-normal leading-relaxed line-clamp-2">Command line tool for fetching real-time weather updates directly in your terminal.</p>
                                 <div class="mt-auto pt-4 flex items-center justify-between border-t border-border-dark/50">
-                                    <a class="text-sm font-bold text-white hover:text-primary transition-colors" href="#">View Details</a>
-                                    <a class="text-gray-400 hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full" href="#" title="View Source">
+                                    <a class="text-sm font-bold text-white hover:text-primary transition-colors" href="/apps/photo-contest.html">View details</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article data-category="web" class="app-card group flex flex-col bg-surface-dark rounded-2xl border border-border-dark overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-black/20">
+                            <a class="block w-full relative aspect-video bg-white bg-cover bg-top overflow-hidden" href="/apps/ninefruits-laravel.html" style="background-image: url('/img/apps/laravel/admin.png');">
+                                <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all"></div>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10 uppercase tracking-wide">Web</div>
+                            </a>
+                            <div class="p-5 flex flex-col gap-3 flex-1">
+                                <h2 class="text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
+                                    <a href="/apps/ninefruits-laravel.html">Ninefruits for Laravel</a>
+                                </h2>
+                                <p class="text-gray-400 text-sm font-body leading-relaxed">A student information system a university can install, from admission through graduation.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Laravel</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Filament</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">PostgreSQL</span>
+                                </div>
+                                <div class="mt-auto pt-4 flex items-center justify-between border-t border-border-dark/50">
+                                    <a class="text-sm font-bold text-white hover:text-primary transition-colors" href="/apps/ninefruits-laravel.html">View details</a>
+                                    <a class="text-gray-400 hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full" href="https://github.com/humble92/ninefruits-laravel" target="_blank" rel="noopener noreferrer" title="View source">
                                         <span class="material-symbols-outlined text-[20px] block">code</span>
                                     </a>
                                 </div>
                             </div>
                         </article>
-                        <article data-category="mobile" class="app-card group flex flex-col bg-surface-dark rounded-2xl border border-border-dark overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-black/20">
-                            <a class="block w-full relative bg-center bg-no-repeat aspect-video bg-cover overflow-hidden" href="#" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBO_nTehMcgXPVPNfejXKeSbbv4UGu73xcnOoGJVY8uEcwslFmWKDACoxO_a-7_uxZKgUYJBXWEKMDykX84HzL7fs83q2PwI_bh6VLyM1VX65DJ9l8VEUrv2lKNVC9zVU3_aTEDYUQo55jr_tNhWqz3XgRmz-WXP_Y8m-xKGj1lavg-NVgDXGv6_WJGFegHEqxitQ7rQqricO7bJ3Z_iywOnfKcoZaRY_Cw29JHkGCUSkRwh6lWLXLQ0EZ7WxvqzMLW1U3fEqvEI8U");'>
-                                <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
-                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10 uppercase tracking-wide">Mobile</div>
-                            </a>
-                            <div class="p-5 flex flex-col gap-3 flex-1">
-                                <div class="flex justify-between items-start">
-                                    <h3 class="text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Task Master</h3>
-                                </div>
-                                <p class="text-gray-400 text-sm font-body font-normal leading-relaxed line-clamp-2">Productivity focused task manager with Pomodoro timer integration.</p>
-                                <div class="mt-auto pt-4 flex items-center justify-between border-t border-border-dark/50">
-                                    <a class="text-sm font-bold text-white hover:text-primary transition-colors" href="#">View Details</a>
-                                    <div class="flex gap-1">
-                                        <a class="text-gray-400 hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full" href="#" title="App Store">
-                                            <span class="material-symbols-outlined text-[20px] block">smartphone</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
                         <article data-category="web" class="app-card group flex flex-col bg-surface-dark rounded-2xl border border-border-dark overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-black/20">
-                            <a class="block w-full relative bg-center bg-no-repeat aspect-video bg-cover overflow-hidden" href="#" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8Tkk0mugdCjo32BDgAXoxzOvY2vndjq2ifwClam82OrtD1aCzkh3tXJsiGxibDkCdouQAot5ozIAjeFtAsUfVllp_P9zPe5ULi5ZRcuoUhl4PyicciH2wbICt41PDSI7SVJSLInPRphlvoySaPeUh1Wr-Bv09_-n49iv4KaKvc7xl-zkcDJtzrbFe55hgtJW4lhZLCIG_UMO6p_3ZFR1NcGA6vgQo2Whz2K6LDQTPK4KNxMVh3gdAAB8H9wNIw2FJ6XSm3JCUG0Y");'>
-                                <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
-                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10 uppercase tracking-wide">Desktop</div>
+                            <a class="block w-full relative aspect-video bg-white bg-cover bg-top overflow-hidden" href="/apps/ninefruits-django.html" style="background-image: url('/img/apps/django/admin.png');">
+                                <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all"></div>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10 uppercase tracking-wide">Web</div>
                             </a>
                             <div class="p-5 flex flex-col gap-3 flex-1">
-                                <div class="flex justify-between items-start">
-                                    <h3 class="text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Notes App</h3>
+                                <h2 class="text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
+                                    <a href="/apps/ninefruits-django.html">Ninefruits for Django</a>
+                                </h2>
+                                <p class="text-gray-400 text-sm font-body leading-relaxed">The same academic system on Django. The database schema matches, so an installation can move across.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Django</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">HTMX</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">PostgreSQL</span>
                                 </div>
-                                <p class="text-gray-400 text-sm font-body font-normal leading-relaxed line-clamp-2">Simple markdown note taking app with local-first sync and encryption.</p>
                                 <div class="mt-auto pt-4 flex items-center justify-between border-t border-border-dark/50">
-                                    <a class="text-sm font-bold text-white hover:text-primary transition-colors" href="#">View Details</a>
-                                    <a class="text-gray-400 hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full" href="#" title="Download">
-                                        <span class="material-symbols-outlined text-[20px] block">download</span>
+                                    <a class="text-sm font-bold text-white hover:text-primary transition-colors" href="/apps/ninefruits-django.html">View details</a>
+                                    <a class="text-gray-400 hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full" href="https://github.com/humble92/ninefruits-django" target="_blank" rel="noopener noreferrer" title="View source">
+                                        <span class="material-symbols-outlined text-[20px] block">code</span>
                                     </a>
                                 </div>
                             </div>
                         </article>
                         <article data-category="web" class="app-card group flex flex-col bg-surface-dark rounded-2xl border border-border-dark overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-black/20">
-                            <a class="block w-full relative bg-center bg-no-repeat aspect-video bg-cover overflow-hidden" href="#" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5z8Ulbg4Zvd1ykES3rm1BKgFfChbWdCl83hcLPw3NTsYMA-7MuggPeG7-hiBKx4kORzNDw7YeExodEzwYmGGCUkhxkVCaqPyFWwquqb3n3r-44Mh6qKOcrW_7awX2GWT8vfmQh5PqE2hyGn_FHw0j6qCAhizrHP2NjvQPx3NqhkQWSJ2YYl5_xBv93J5N6cQZY7o3nZKC6IoWo3jtKu4MdjFVr9_FGD2BKhH5mi5qmWJ53b5L_DEnrN7fsgMjVe3l2zlKfZfWNOs");'>
+                            <a class="block w-full relative aspect-video bg-[#0b1220] bg-cover bg-top overflow-hidden" href="/apps/solar-gps-guardian.html" style="background-image: url('/img/apps/solar/live.png');">
                                 <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
-                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10 uppercase tracking-wide">Finance</div>
+                                <div class="absolute top-3 left-3 bg-primary text-background-dark text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">Live</div>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10 uppercase tracking-wide">Web</div>
                             </a>
                             <div class="p-5 flex flex-col gap-3 flex-1">
-                                <div class="flex justify-between items-start">
-                                    <h3 class="text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Budget Tracker</h3>
+                                <h2 class="text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
+                                    <a href="/apps/solar-gps-guardian.html">Solar GPS Guardian</a>
+                                </h2>
+                                <p class="text-gray-400 text-sm font-body leading-relaxed">A public dashboard for GPS risk from space weather: a place, a driving route, and an email alert.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Next.js</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Python</span>
+                                    <span class="text-xs font-medium px-2 py-1 rounded-md bg-white/5 text-gray-300">Modal</span>
                                 </div>
-                                <p class="text-gray-400 text-sm font-body font-normal leading-relaxed line-clamp-2">Personal finance dashboard to track spending habits and savings goals.</p>
                                 <div class="mt-auto pt-4 flex items-center justify-between border-t border-border-dark/50">
-                                    <a class="text-sm font-bold text-white hover:text-primary transition-colors" href="#">View Details</a>
-                                    <a class="text-gray-400 hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full" href="#" title="Launch App">
-                                        <span class="material-symbols-outlined text-[20px] block">open_in_new</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        <article data-category="web" class="app-card group flex flex-col bg-surface-dark rounded-2xl border border-border-dark overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-black/20">
-                            <a class="block w-full relative bg-center bg-no-repeat aspect-video bg-cover overflow-hidden" href="#" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCzO7Yt280Gey52hrCjiJh1V-8vdML48lcyI57SOOMxyGjGxRtWTGiTZm3gFi7JdIpoEg9B-kwNYTiDo04RLAzdPvw1kYnzZ5A9pXEAnwtwoEnexwiBDjh4HI2q-j2b0JpRT3vL6Ggo3sx3RXCOoyzAduve-6wQUMQEhK7-ryrV25IK6nLIhBIlORvtJCz8OgoKo_I6SvkSSnFH9EIB-s6oAK-vVG8Y3UVfchQl3RLvFBj61NrJNzId7IzEpnIADaU2D_LZo3YX_HI");'>
-                                <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
-                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10 uppercase tracking-wide">SaaS</div>
-                            </a>
-                            <div class="p-5 flex flex-col gap-3 flex-1">
-                                <div class="flex justify-between items-start">
-                                    <h3 class="text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Social Analytics</h3>
-                                </div>
-                                <p class="text-gray-400 text-sm font-body font-normal leading-relaxed line-clamp-2">Track your social media growth across multiple platforms in one place.</p>
-                                <div class="mt-auto pt-4 flex items-center justify-between border-t border-border-dark/50">
-                                    <a class="text-sm font-bold text-white hover:text-primary transition-colors" href="#">View Details</a>
-                                    <a class="text-gray-400 hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full" href="#" title="Dashboard">
-                                        <span class="material-symbols-outlined text-[20px] block">analytics</span>
+                                    <a class="text-sm font-bold text-white hover:text-primary transition-colors" href="/apps/solar-gps-guardian.html">View details</a>
+                                    <a class="text-gray-400 hover:text-primary transition-colors p-2 hover:bg-white/5 rounded-full" href="https://github.com/humble92/solar-gps-guardian" target="_blank" rel="noopener noreferrer" title="View source">
+                                        <span class="material-symbols-outlined text-[20px] block">code</span>
                                     </a>
                                 </div>
                             </div>

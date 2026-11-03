@@ -70,7 +70,12 @@ function updateActiveState() {
         
         let isActive = false;
 
-        if (linkPath === currentPath) {
+        const onAppsSection = currentPath === '/apps' || currentPath.startsWith('/apps/');
+        const linkIsApps = linkPath.endsWith('/apps/index.html');
+
+        if (linkIsApps && onAppsSection) {
+            isActive = true;
+        } else if (linkPath === currentPath) {
             if (linkHash) {
                 // Link has a meaningful hash (like #about) - must match exactly
                 isActive = (linkHash === currentHash);
