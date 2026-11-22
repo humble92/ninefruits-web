@@ -10,6 +10,7 @@ This site introduces the developer and the apps. Each project page says what the
 | [Ninefruits for Laravel](apps/ninefruits-laravel.html) | A student information system a university can install, from admission through graduation. |
 | [Ninefruits for Django](apps/ninefruits-django.html) | The same system on Django. The database schema matches, so an installation can move across. |
 | [Solar GPS Guardian](apps/solar-gps-guardian.html) | A live public dashboard for GPS risk from space weather. |
+| [Departure](apps/check-rental-cars.html) | A pickup report for rental cars: photos, an AI review, and a PDF you can keep. |
 
 ## Local preview
 
